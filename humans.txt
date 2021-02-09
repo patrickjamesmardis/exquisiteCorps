@@ -3,11 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Samuel Herwig
+    Patrick Mardis
+    William Vogel
+    Jason Warrick
+    
 
 # THANKS
 
-    <name>
+    Prof: David Schaal
 
 # TECHNOLOGY COLOPHON
 
