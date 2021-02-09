@@ -3,15 +3,15 @@
 
 # TEAM
 
-    Samuel Herwig
-    Patrick Mardis
-    William Vogel
-    Jason Warrick
+    Samuel Herwig - developer - The University of Colorado, Boulder
+    Patrick Mardis - developer - The University of Colorado, Boulder
+    William Vogel - developer - The University of Colorado, Boulder
+    Jason Warrick - developer - The University of Colorado, Boulder
     
 
 # THANKS
 
-    Prof: David Schaal
+    Professor David Schaal - The University of Colorado, Boulder
 
 # TECHNOLOGY COLOPHON
 
