@@ -89,17 +89,32 @@ textarea {
    Author's custom styles
    ========================================================================== */
   
+   /* animate in a paragraph, opacity 0-1, start 15px below position and move back up */
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
    body {
-     font-family: 'IBM Plex Sans';
+     font-family: 'IBM Plex Sans'; /* installed at top of file */
      background-color: #F2CA80;
      color: #041840;
    }
    .paragraph {
+     /* make each paragraph section 100% of the viewport */
      width: 100vw;
      height: 100vh;
      background-color: #F2CA80;
+     /* once the top hits 0, stick in place */
      position: sticky;
      top: 0;
+     /* flexbox to center div with text */
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
@@ -110,6 +125,7 @@ textarea {
    .paragraph .container {
       max-width: 960px;
       padding: 0 40px;
+      opacity: 0; /* if it's not .in-view, don't show it */
    }
 
    .paragraph h2 {
@@ -146,7 +162,7 @@ textarea {
      color: #F2DDB6;
    }
 
-    p.small {
+   p.small {
      font-size: 16px;
    }
 
@@ -158,6 +174,11 @@ textarea {
 
    a:hover {
      opacity: 1;
+   }
+
+   /* once a section is in-view, animate in the div.container */
+   .paragraph.in-view .container {
+     animation: show 1s 0.2s both cubic-bezier(0.68,-0.55,0.27,1.55);
    }
 
 /* ==========================================================================
