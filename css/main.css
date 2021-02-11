@@ -91,10 +91,15 @@ textarea {
   
    body {
      font-family: 'IBM Plex Sans';
+     background-color: #F2CA80;
+     color: #041840;
    }
    .paragraph {
      width: 100vw;
      height: 100vh;
+     background-color: #F2CA80;
+     position: sticky;
+     top: 0;
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
@@ -111,10 +116,29 @@ textarea {
       font-family: 'IBM Plex Sans Condensed';
       font-size: 58px;
       text-transform: uppercase;
+      color: #D98E04;
    }
 
    .paragraph p {
      font-size: 22px;
+   }
+
+   #paragraph-2 {
+     background-color: #041840;
+     color: #F2DDB6;
+   }
+
+   #paragraph-3 {
+     background-color: #F2DDB6;
+   }
+
+   #paragraph-4 {
+     background-color: #010D26;
+     color: #F2DDB6;
+   }
+
+   #paragraph-6 {
+     background-color: #F2DDB6;
    }
 /* ==========================================================================
    Helper classes
