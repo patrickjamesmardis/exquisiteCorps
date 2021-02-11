@@ -89,6 +89,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
   
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
    body {
      font-family: 'IBM Plex Sans';
      background-color: #F2CA80;
@@ -110,6 +121,7 @@ textarea {
    .paragraph .container {
       max-width: 960px;
       padding: 0 40px;
+      opacity: 0;
    }
 
    .paragraph h2 {
@@ -158,6 +170,10 @@ textarea {
 
    a:hover {
      opacity: 1;
+   }
+
+   .paragraph.in-view .container {
+     animation: show 1s 0.2s both cubic-bezier(0.68,-0.55,0.27,1.55);
    }
 
 /* ==========================================================================

@@ -1,0 +1,13 @@
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.intersectionRatio > 0.3 ? entry.target.classList.add("in-view") : entry.target.classList.remove("in-view");
+    });
+}, {
+    threshold: [0.0, 0.3, 1.0]
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
