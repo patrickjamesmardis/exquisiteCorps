@@ -1,3 +1,5 @@
+/* IMP Plex Sans + IMP Plex Sans Condensed @ 400 regular via fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Sans+Condensed&display=swap');
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -86,7 +88,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  
+   body {
+     font-family: 'IBM Plex Sans';
+   }
+   .paragraph {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
 
+   .paragraph .container {
+      width: 960px;
+      padding: 0 40px;
+   }
+
+   .paragraph h2 {
+      font-family: 'IBM Plex Sans Condensed';
+      font-size: 58px;
+      text-transform: uppercase;
+   }
+
+   .paragraph p {
+     font-size: 22px;
+   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
