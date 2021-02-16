@@ -125,7 +125,6 @@ textarea {
    .paragraph .container {
       max-width: 960px;
       padding: 0 40px;
-      opacity: 0; /* if it's not .in-view, don't show it */
    }
 
    .paragraph h2 {
@@ -176,10 +175,16 @@ textarea {
      opacity: 1;
    }
 
+  /* if user has preference for reduced motion, don't animate the text in */
+   @media (prefers-reduced-motion: no-preference) {
+    .paragraph .cointainer {
+      opacity: 0; /* if it's not .in-view, don't show it */
+    }
    /* once a section is in-view, animate in the div.container */
    .paragraph.in-view .container {
      animation: show 1s 0.2s both cubic-bezier(0.68,-0.55,0.27,1.55);
    }
+}
 
 /* ==========================================================================
    Helper classes
