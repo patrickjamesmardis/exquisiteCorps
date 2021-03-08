@@ -125,6 +125,7 @@ textarea {
    .paragraph .container {
       max-width: 960px;
       padding: 0 40px;
+      opacity: 0;
    }
 
    .paragraph h2 {
@@ -201,6 +202,12 @@ textarea {
    .paragraph.in-view .container {
      animation: show 1s 0.2s both cubic-bezier(0.68,-0.55,0.27,1.55);
    }
+
+   }
+      @media (prefers-reduced-motion: reduce) {
+     .paragraph .container {
+       opacity: 1;
+     }
 }
 
 /* ==========================================================================
