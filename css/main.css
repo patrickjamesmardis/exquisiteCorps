@@ -175,6 +175,23 @@ textarea {
      opacity: 1;
    }
 
+   @media (max-width: 700px) {
+    .paragraph h2 {
+      font-size: 32px;
+    }
+       .paragraph p {
+     font-size: 18px;
+   }
+
+      @media (max-width: 400px) {
+    .paragraph h2 {
+      font-size: 24px;
+    }
+       .paragraph p {
+     font-size: 16px;
+   }
+   }
+
   /* if user has preference for reduced motion, don't animate the text in */
    @media (prefers-reduced-motion: no-preference) {
     .paragraph .cointainer {
@@ -274,9 +291,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
